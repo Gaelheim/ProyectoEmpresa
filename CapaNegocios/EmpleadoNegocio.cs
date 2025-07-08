@@ -17,6 +17,7 @@ namespace CapaNegocio
             Cargo = cargo;
             SueldoBase = sueldoBase;
             FechaIngreso = fechaIngreso;
+
             HorasExtra = 0;
             HorasNocturnas = 0;
         }

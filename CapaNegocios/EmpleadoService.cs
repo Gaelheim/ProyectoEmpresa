@@ -24,6 +24,9 @@ namespace CapaNegocio
                 FechaIngreso = empleado.FechaIngreso,
                 HorasExtra = empleado.HorasExtra,
                 HorasNocturnas = empleado.HorasNocturnas
+
+                FechaIngreso = empleado.FechaIngreso
+
             };
 
             return empleadoDatos.InsertarEmpleado(dto);

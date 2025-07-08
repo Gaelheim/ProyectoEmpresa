@@ -1,5 +1,9 @@
+
 ﻿using CapaNegocio;
 using System;
+
+﻿using System;
+
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,6 +18,7 @@ namespace CapaPresentacion
 {
     public partial class FormEmpleado : Form
     {
+
         private readonly EmpleadoService empleadoService;
         public FormEmpleado()
         {
@@ -86,6 +91,11 @@ namespace CapaPresentacion
         }
         private void FormEmpleado_Load(object sender, EventArgs e)
         {
+
+
+        public FormEmpleado()
+        {
+            InitializeComponent();
 
         }
     }

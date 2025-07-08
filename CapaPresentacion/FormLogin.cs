@@ -1,5 +1,9 @@
+
 ﻿using CapaNegocio;
 using System;
+
+﻿using System;
+
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,6 +17,7 @@ namespace CapaPresentacion
 {
     public partial class FormLogin : Form
     {
+
         private readonly LoginService loginService;
         public FormLogin()
         {
@@ -44,6 +49,11 @@ namespace CapaPresentacion
                 lblMensaje.Text = "Usuario o clave incorrectos";
                 lblMensaje.ForeColor = System.Drawing.Color.Red;
             }
+
+        public FormLogin()
+        {
+            InitializeComponent();
+
         }
     }
 }

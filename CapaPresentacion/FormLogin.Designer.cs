@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormLogin));
             txtUsuario = new TextBox();
             txtClave = new TextBox();
@@ -116,5 +117,14 @@
         private PictureBox ptbNoveo;
         private Button btnLogin;
         private Label lblMensaje;
+
+            this.components = new System.ComponentModel.Container();
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Text = "FormLogin";
+        }
+
+        #endregion
+
     }
 }

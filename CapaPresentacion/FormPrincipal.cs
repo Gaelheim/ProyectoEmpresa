@@ -2,6 +2,7 @@ namespace CapaPresentacion
 {
     public partial class FormPrincipal : Form
     {
+
         private string _usuario;
         private string _rol;
         public FormPrincipal(string usuario, string rol)
@@ -32,6 +33,11 @@ namespace CapaPresentacion
 
         private void FormPrincipal_Load(object sender, EventArgs e)
         {
+
+
+        public FormPrincipal()
+        {
+            InitializeComponent();
 
         }
     }

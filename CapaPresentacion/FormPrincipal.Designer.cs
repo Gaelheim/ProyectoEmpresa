@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+
             btnRegistrarEmpleado = new Button();
             btnReporte = new Button();
             btnCerrarSesion = new Button();
@@ -107,5 +108,14 @@
         private Button btnReporte;
         private Button btnCerrarSesion;
         private Label lblBienvenida;
+
+            this.components = new System.ComponentModel.Container();
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Text = "Form1";
+        }
+
+        #endregion
+
     }
 }
