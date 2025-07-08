@@ -14,6 +14,10 @@ namespace CapaDatos
         public string Cargo { get; set; }
         public decimal SueldoBase { get; set; }
         public DateTime FechaIngreso { get; set; }
+
+        public int HorasExtra { get; set; }
+        public int HorasNocturnas { get; set; }
+
     }
 
     public class EmpleadoDatos
@@ -37,6 +41,11 @@ namespace CapaDatos
                 cmd.Parameters.AddWithValue("@Cargo", empleado.Cargo);
                 cmd.Parameters.AddWithValue("@SueldoBase", empleado.SueldoBase);
                 cmd.Parameters.AddWithValue("@FechaIngreso", empleado.FechaIngreso);
+
+                cmd.Parameters.AddWithValue("@HorasExtra", empleado.HorasExtra);
+                cmd.Parameters.AddWithValue("@HorasNocturnas", empleado.HorasNocturnas);
+
+
 
                 conn.Open();
                 return cmd.ExecuteNonQuery() > 0;
@@ -63,6 +72,10 @@ namespace CapaDatos
                         Cargo = reader["Cargo"].ToString(),
                         SueldoBase = Convert.ToDecimal(reader["SueldoBase"]),
                         FechaIngreso = Convert.ToDateTime(reader["FechaIngreso"])
+
+                        HorasExtra = Convert.ToInt32(reader["HorasExtra"]),
+                        HorasNocturnas = Convert.ToInt32(reader["HorasNocturnas"])
+
                     });
                 }
             }

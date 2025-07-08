@@ -7,6 +7,8 @@ namespace CapaNegocio
         public string Cargo { get; set; }
         public decimal SueldoBase { get; set; }
         public DateTime FechaIngreso { get; set; }
+        public int HorasExtra { get; set; }
+        public int HorasNocturnas { get; set; }
 
         // Constructor personalizado
         public EmpleadoNegocio(string nombre, string cedula, string cargo, decimal sueldoBase, DateTime fechaIngreso)
@@ -15,6 +17,9 @@ namespace CapaNegocio
             Cargo = cargo;
             SueldoBase = sueldoBase;
             FechaIngreso = fechaIngreso;
+
+            HorasExtra = 0;
+            HorasNocturnas = 0;
         }
 
         // Implementación del método abstracto

@@ -21,7 +21,12 @@ namespace CapaNegocio
                 Cedula = empleado.Cedula,
                 Cargo = empleado.Cargo,
                 SueldoBase = empleado.SueldoBase,
+                FechaIngreso = empleado.FechaIngreso,
+                HorasExtra = empleado.HorasExtra,
+                HorasNocturnas = empleado.HorasNocturnas
+
                 FechaIngreso = empleado.FechaIngreso
+
             };
 
             return empleadoDatos.InsertarEmpleado(dto);
